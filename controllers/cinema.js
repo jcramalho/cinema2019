@@ -11,7 +11,7 @@ normalize = function(response) {
 async function execQuery(q){
     try{
         var encoded = encodeURIComponent(q);
-        response = await axios.get("http://localhost:7200/repositories/cinema" + '?query=' + encoded);
+        response = await axios.get("http://localhost:7200/repositories/cinema2019" + '?query=' + encoded);
         return(normalize(response.data));
     }
     catch(error) {
